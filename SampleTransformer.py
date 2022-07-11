@@ -111,7 +111,7 @@ history = model.fit(
     y=y_train,
     batch_size=batch_size,
     epochs=num_epochs,
-    validation_split=0.1,)
+    validation_split=0.1,) #this is the results section of the model
 accuracy, top_5_accuracy = model.evaluate(x_test, y_test)
 print(f"Test accuracy: {round(accuracy * 100, 2)}%")
 print(f"Test top 5 accuracy: {round(top_5_accuracy * 100, 2)}%")
